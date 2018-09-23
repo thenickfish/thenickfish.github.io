@@ -1,19 +1,19 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
+title: Nick Fish
+description: ""
 baseurl: "" # for test: remove string '/space-jekyll-template' to ''
-url: "https://nicholas.fish/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+url: "" #"https://nicholas.fish/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
-disqus_username: loremipsum
-profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
+username: thenickfish
+user_title: Nick Fish - Developer
+email: thenickfish@protonmail.com
+twitter_username: thenickfish
+github_username:  thenickfish
+gplus_username:  thenickfish
+linkedin_public_url: thenickfish
+disqus_username: thenickfish
+profile_picture: https://image.ibb.co/mpb7bR/DSC03653.png
 
 # Build settings
 markdown: kramdown
@@ -47,11 +47,11 @@ links:
       key_trigger: 5
   section_2:
     - title: github
-      url: http://www.github.com/victorvoid
+      url: http://www.github.com/thenickfish
       new_tab: true
       key_trigger: g
     - title: twitter
-      url: http://www.twitter.com/victorvoid
+      url: http://www.twitter.com/thenickfish
       key_trigger: t
     - title: search
       url: ""
@@ -59,12 +59,8 @@ links:
 
 # projects in header index
 projects:
-  - name: fluany
-    url: https://github.com/fluany/fluany
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+  - name: BasicFeatureToggle
+    url: https://github.com/thenickfish/BasicFeatureToggle
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
