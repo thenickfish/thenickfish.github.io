@@ -53,9 +53,6 @@ links:
     - title: twitter
       url: http://www.twitter.com/thenickfish
       key_trigger: t
-    - title: search
-      url: ""
-      key_trigger: s #WARNING: search only works with "s"
 
 # projects in header index
 projects:
