@@ -36,7 +36,7 @@
         </div>
 
         <ul class="recent">
-            <p>Recent posts:</p>
+            <a href="/posts"><p>Recent posts:</p></a>
              {% for post in site.posts limit:3%}
                 <li>
                     <a title="Will take a my recent post" href="{{ post.url | prepend: site.baseurl }}">
