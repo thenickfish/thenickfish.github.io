@@ -1,0 +1,50 @@
+---
+key: 1
+title: blog
+permalink: blog/
+options: fullwidth
+excerpt: My thoughts on tech topics
+image: assets/img/DSC02332.jpg
+caption: big cottonwood canyon
+<!-- background-image: DSC02332.jpg -->
+---
+
+{%  if site.posts %}{%
+      if site.tags.featured %}
+  <hr style="margin:0 0 1em 0;" />
+  <h4>Featured</h4>
+  <ul class="post-list">{%
+        for post in site.categories.topics %}{%
+          if post.tags contains "featured" %}
+      <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="container">
+            <p class="post-title">{{ post.title }}</p>
+            <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+            <p class="post-desc">{{ post.excerpt | strip_html | truncatewords: 12 }}</p>
+          </div>
+        </a>
+      </li>{%
+          endif %}{%
+        endfor %}
+  </ul>{%
+      endif %}
+  <hr style="margin:1em 0 1em 0;" />
+
+    <ul style="list-style-type: none;">{%
+      assign p = '9999'
+%}{%  for post in site.categories.topics
+%}{%    assign n = post.date | date: "%Y"
+%}{%    if n != p
+%}{%      assign p = n
+%}
+      <br /><h5>{{ n }}</h5>{%
+        endif %}
+      <li style="padding-bottom: 6px;">[{{ post.date | date: "%b %d" }}]&nbsp;
+        <a href="{{ post.url | prepend: site.baseurl }}"><b>{{ post.title }}</b></a>&nbsp;
+          {{ post.excerpt | strip_html | truncatewords: 12 }}</li>{%
+      endfor
+%}
+    </ul>
+
+{%  endif %}

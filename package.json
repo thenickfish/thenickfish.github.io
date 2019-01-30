@@ -1,0 +1,32 @@
+{
+  "name": "nicholas.fish",
+  "version": "1.0.0",
+  "description": "My personal web site, using the awesome design of http://html5up.net/spectral by\r the talented [@ajlkn](http://twitter.com/ajlkn).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenickfish/arkadianriver.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenickfish/arkadianriver.com/issues"
+  },
+  "homepage": "https://github.com/thenickfish/arkadianriver.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-gm": "0.0.9",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
