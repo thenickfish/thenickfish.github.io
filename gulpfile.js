@@ -6,6 +6,7 @@ var gulp = require("gulp"),
   newer = require("gulp-newer"),
   graphicsMagick = require("gulp-gm"),
   imagemin = require("gulp-imagemin"),
+  imageResize = require('gulp-image-resize'),
   sass = require("gulp-sass"),
   cleanCSS = require("gulp-clean-css"),
   exec = require("child_process").exec;
@@ -46,7 +47,7 @@ function processStyles() {
 
 function processScripts() {
   return gulp
-    .src(["src/js/jquery.min.js", "src/js/jquery.scrollex.min.js", "src/js/jquery.scrolly.min.js", "src/js/skel.min.js", "src/js/util.js", "src/js/*.js"])
+    .src(["src/js/jquery.min.js", "src/js/jquery.scrollex.min.js", "src/js/jquery.scrolly.min.js", "src/js/skel.min.js", "src/js/util.js", "src/js/*.js", "node_modules/blueimp-gallery/js/blueimp-gallery.min.js"])
     .pipe(plumber())
     .pipe(concat("main.js"))
     .pipe(uglify())
@@ -57,7 +58,7 @@ function processScripts() {
 
 function processImages() {
   return gulp
-    .src("src/img/**/*.{jpg,png,gif}")
+    .src("src/img/**/*.{jpg,JPG,png,gif}")
     .pipe(plumber())
     .pipe(newer("assets/img/"))
     .pipe(
@@ -71,8 +72,30 @@ function processImages() {
         return gmfile.resize(width);
       })
     )
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest("assets/img/"));
+    .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+    .pipe(gulp.dest("assets/img/"))
+    
+
+    //convert input.jpg -thumbnail x200 -resize '200x<' -resize 50% -gravity center -crop 100x100+0+0 +repage -format jpg -quality 91 square.jpg
+    //convert -define jpeg:size=200x200 hatching_orig.jpg  -thumbnail 100x100^ -gravity center -extent 100x100  cut_to_fit.gif
+    // thumbnails
+    // .pipe(
+    //   graphicsMagick(function(gmfile) {
+    //     // console.warn(gmfile.source)
+    //     gmfile.setFormat("jpg").quality(90);
+        
+    //     // return gmfile.gravity("Center").resize(250).crop(250, 250);
+    //     // return gmfile.gravity('Center').thumb(250, 250)
+    //     // return gmfile.resize(250);
+    //   })
+    // )
+    .pipe(imageResize({
+      width : 250,
+      height : 250,
+      crop : true,
+      upscale : false
+    }))
+    .pipe(gulp.dest("assets/img/thumbnails/"));
 }
 
 function watch(done) {

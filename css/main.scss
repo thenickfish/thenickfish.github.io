@@ -10,6 +10,7 @@ $baseurl: '{{ site.baseurl }}/assets/img';
 @import 'font-awesome.min.css';
 @import 'syntax-highlighting.css';
 @import 'vendor/disqus.css';
+@import '../../node_modules/blueimp-gallery/css/blueimp-gallery.min.css';
 
 /*
 	Spectral by HTML5 UP
@@ -2349,6 +2350,10 @@ $baseurl: '{{ site.baseurl }}/assets/img';
        width: 100%;
        height:100%;
      }
+  }
+
+  #blueimp-gallery img {
+	  width: auto;
   }
 
 {% if site.custom_extensions == 'yes' %}
