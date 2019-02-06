@@ -1,11 +1,34 @@
 ---
 key: 2
 title: Resume
-permalink: resume/
+permalink: resume-md/
 excerpt: From a professional standpoint, this is who I am. If you're looking to hire me, this is probably what you're looking for.
 image: assets/img/DSC02161.jpg
 caption: photo &#58; rockville,utah - outside of zion national park
 ---
+<!-- http://preview.themeforest.net/item/desmond-resume-cv-html-template/full_screen_preview/15956797 -->
+
+<div class="resume-section">
+<div class="left-resume-col">Skills</div>
+<div class="right-resume-col">Skills</div>
+</div>
+
+
+skills
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-md-2-5 left"> Skills </div>
+    <div class="pure-u-1 pure-u-md-3-5">
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2"> c# </div>
+        <div class="pure-u-1 pure-u-md-1-2"> sql </div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2"> something </div>
+        <div class="pure-u-1 pure-u-md-1-2"> something else </div>
+    </div>
+    </div>
+</div>
+
 
 <div style="text-align: center">
     <h1 style="margin-bottom: 0">Nick Fish</h1>
@@ -15,6 +38,14 @@ caption: photo &#58; rockville,utah - outside of zion national park
 </div>
 
 I crave learning and outside of my professional life still pursue education in my personal time. I'm always trying to learn new techniques, architectures, and technologies. I value writing clean and testable code, and always try to find a balance between simplicity and flexibility.
+
+
+Technology Summary:
+Languages: C#, Java, C++, Typescript
+Development Tools & Methods:
+Systems:
+Databases:
+
 
 <h2 style="text-align: center">SelectHealth</h2>
 <!-- ###### something-present -->

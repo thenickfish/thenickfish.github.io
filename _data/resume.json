@@ -1,0 +1,58 @@
+{
+    "experiences": [
+        {
+            "title": "csharp",
+            "description": "testing testing 123"
+        },
+        {
+            "title": "jenkins",
+            "description": "testing testing 123"
+        },
+        {
+            "title": "git",
+            "description": "testing testing 123"
+        },
+        {
+            "title": "angular",
+            "description": "testing testing 123"
+        },
+        {
+            "title": "jekyll",
+            "description": "testing testing 123"
+        },
+        {
+            "title": "sql server",
+            "description": "testing testing 123"
+        },
+        {
+            "title": "unit testing",
+            "description": "testing testing 123"
+        }
+    ],
+    "skills": [
+        {
+            "title": "C#",
+            "percent": 85
+        },
+        {
+            "title": "SQL",
+            "percent": 90
+        },
+        {
+            "title": "Powershell",
+            "percent": 65
+        },
+        {
+            "title": "Angular",
+            "percent": 80
+        },
+        {
+            "title": "Jenkins",
+            "percent": 60
+        },
+        {
+            "title": "Git",
+            "percent": 80
+        }
+    ]
+}
