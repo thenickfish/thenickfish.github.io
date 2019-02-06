@@ -1611,7 +1611,7 @@ button,
 	}
 
 	>.inner {
-		width: 60em;
+		width: 80%;
 		margin: 0 auto;
 
 		&.fullwidth {
@@ -2478,7 +2478,7 @@ body.is-mobile {
 	@include breakpoint(small) {
 		flex-direction: column;
 	}
-
+	margin-bottom: 2px;
 	
 }
 
@@ -2491,7 +2491,7 @@ body.is-mobile {
 	text-align: right;
 	width: 33%;
 	padding: 1em;
-	padding-top: 45px;
+	padding-top: 25px + 8px;
 	padding-right: 20px;
 
 	@include breakpoint(small) {
@@ -2508,9 +2508,10 @@ body.is-mobile {
 	width: 67%;
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
-	padding-top: 35px;
-	padding-right: 45px;
+	padding: 25px 45px 25px 25px;
+	// padding-top: 35px;
+	// padding-right: 45px;
+	// padding-left: 25px;
 
 	@include breakpoint(small) {
 		text-align: center;
@@ -2520,7 +2521,7 @@ body.is-mobile {
 
 .resume-row {
 	display:flex;
-	flex:1;
+	// flex:1;
 	@include breakpoint(small) {
 		flex-direction: column;
 	}
@@ -2529,21 +2530,24 @@ body.is-mobile {
 .resume-item {
 	> h4 {
 		padding: 0 5px 0 5px;
-		color: red;
+		@include breakpoint(small) {
+			display: none;
+		}
 	}
 	// background-color: gold;
 	flex:1;
-	margin: 5px;
-	padding: 10px;
+	// margin: 5px;
+	
+	// padding: 10px 0 10px 0;
+	padding: 8px;
 	display: flex;
 }
-
-.resume-item .resume-item-count {
-	color: red;
+.resume-item-count {
+	color: gray !important;
 }
-
 .resume-item-body {
 	margin-left: 5px;
+	width: 100%;
 	h4 {
 		text-transform: uppercase;
 		margin-bottom: 5px;
@@ -2551,10 +2555,11 @@ body.is-mobile {
 	}
 	p {
 		margin: 0;
+		font-size: 10pt !important;
 	}
 }
 .meter { 
-	width: 250px;
+	width: 100%;
 	height: 8px;  /* Can be anything */
 	position: relative;
 	background: #555;

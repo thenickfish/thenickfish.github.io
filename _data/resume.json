@@ -1,32 +1,36 @@
 {
     "experiences": [
         {
-            "title": "csharp",
-            "description": "testing testing 123"
+            "title": ".NET / .NET Core",
+            "description": "I've developed many applications using the .NET framework. I've created everything from command line apps, to web services."
         },
         {
-            "title": "jenkins",
-            "description": "testing testing 123"
+            "title": "Jenkins",
+            "description": "Experience automating CI/CD pipelines for static analysis, compilation, and deployment using Jenkins."
         },
         {
-            "title": "git",
-            "description": "testing testing 123"
+            "title": "Git",
+            "description": "5 years of experience using git for version control and code reviews. Longer longer to see how the formatting looks."
         },
         {
-            "title": "angular",
-            "description": "testing testing 123"
+            "title": "Angular",
+            "description": "I've built and maintained sites using Typescript and Angular 2+ (some experience with AngularJS as well)"
         },
         {
-            "title": "jekyll",
-            "description": "testing testing 123"
+            "title": "Jekyll",
+            "description": "This webpage is built using Jekyll, which I consider to be excellent for static site generation."
         },
         {
-            "title": "sql server",
-            "description": "testing testing 123"
+            "title": "SQL",
+            "description": "I've been working with SQL for 10 years, and have used various versions of SQL Server (and other databases)."
         },
         {
-            "title": "unit testing",
-            "description": "testing testing 123"
+            "title": "Testing",
+            "description": "I've developed applications using test driven development, and also used behavior driven development, using the Gherkin language."
+        },
+        {
+            "title": "Agile",
+            "description": "Worked in a Kanban environment using Jira. I also have experience working in a scrum atmosphere."
         }
     ],
     "skills": [
@@ -52,6 +56,18 @@
         },
         {
             "title": "Git",
+            "percent": 80
+        },
+        {
+            "title": "Docker",
+            "percent": 80
+        },
+        {
+            "title": "Java",
+            "percent": 50
+        },
+        {
+            "title": "Typescript",
             "percent": 80
         }
     ]
