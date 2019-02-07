@@ -13,33 +13,33 @@ layout: fullsize
     <div class="resume-section">
         <div class="left-resume-col">
             <h2>About</h2>
-<p>Here's my deal.</p>
+            <p>(here's my deal)</p>
         </div>
         <div class="right-resume-col">
-            <div class="resume-row"><p>I crave learning and outside of my professional life still pursue education in my personal time. I'm always trying to
-                    learn new techniques, architectures, and technologies. I value writing clean and testable code, and always try to find
-                    a balance between simplicity and flexibility.</p></div></div>
-            
-    </div>
-</div>
-<div class="resume-section">
-    <div class="left-resume-col">
-        <h2>Expertise</h2>
-        <p>(Stuff I'm good at)</p>
-    </div>
-    <div class="right-resume-col">
-        <div class="resume-row">
-            {% for experience in site.data.resume.experiences %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if loopindex == 1 and forloop.index >= 2 %}
+            <div class="resume-row">
+                <p>{{site.data.resume.about}}</p>
+            </div>
         </div>
-        <div class="resume-row">
-            {% endif %}
-            <div class="resume-item">
-                <h4 class="resume-item-count">0{{forloop.index}}</h4>
-                <div class="resume-item-body">
-                    <h4>{{experience.title}}</h4>
-                    <span>{{experience.description}}</span>
+    </div>
+
+    <div class="resume-section">
+        <div class="left-resume-col">
+            <h2>Expertise</h2>
+            <p>(stuff I'm good at)</p>
+        </div>
+        <div class="right-resume-col">
+            <div class="resume-row">
+                {% for experience in site.data.resume.experiences %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                {% if loopindex == 1 and forloop.index >= 2 %}
+            </div>
+            <div class="resume-row">
+                {% endif %}
+                <div class="resume-item">
+                    <h4 class="resume-item-count">{% if forloop.index < 10 %}0{% endif %}{{forloop.index}}</h4> <div
+                            class="resume-item-body">
+                            <h4>{{experience.title}}</h4>
+                            <span>{{experience.description}}</span>
                 </div>
             </div>
             {% endfor %}
@@ -49,10 +49,9 @@ layout: fullsize
 <div class="resume-section">
     <div class="left-resume-col">
         <h2>Skills</h2>
-        <p>(things I Know)</p>
+        <p>(things I know)</p>
     </div>
     <div class="right-resume-col">
-
         <div class="resume-row">
             {% for skill in site.data.resume.skills %}
             {% assign loopindex = forloop.index | modulo: 2 %}
@@ -62,7 +61,7 @@ layout: fullsize
             {% endif %}
             <div class="resume-item">
                 <div class="resume-item-body">
-                    <h4>{{skill.title}}</h4>
+                    <h4>{{skill.title}} <span>{{skill.percent}}%</span></h4>
                     <div class="meter">
                         <span style="width: {{skill.percent}}%"></span>
                     </div>
@@ -72,76 +71,31 @@ layout: fullsize
         </div>
     </div>
 </div>
+<div class="resume-section">
+    <div class="left-resume-col">
+        <h2>Employment</h2>
+        <p>(people who gave me money)</p>
+    </div>
+    <div class="right-resume-col">
+        {% for employment in site.data.resume.employments %}
+        <div class="resume-row">
+            <div class="resume-item">
+                <div class="resume-item-body">
+                    <div class="resume-employment">
+                        <div class="resume-employment-details">
+                            <span class="resume-small-lt">{{employment.start}} - {{employment.end}}</span>
+                            <h4>{{employment.company}}</h4>
+                            <h5>{{employment.title}}</h5>
+                            <span class="resume-small-lt">{{employment.location}}</span>
+                        </div>
+                        <div class="resume-employment-desc">
+                            <p>{{employment.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-
-<!-- 
-<div style="text-align: center">
-    <h1 style="margin-bottom: 0">Nick Fish</h1>
-    <p style="margin: 0">Software Engineer</p>
-    <p style="margin: 0">thenickfish@protonmail.com</p>
-    <p style="margin: 0">SLC, UT</p>
 </div>
-
-
-
-
-Technology Summary:
-Languages: C#, Java, C++, Typescript
-Development Tools & Methods:
-Systems:
-Databases:
-
-
-<h2 style="text-align: center">SelectHealth</h2>
-**Software Engineer (Feb 2016 - present)**
-- Developing and maintaining custom software using various technologies
-- .NET/ .NET Core
-- SQL (Sql Server, Sybase ASE)
-- Angular + SCSS
-- git (Bitbucket server)
-- docker
-- IIS
-- Docker
-- Member of governance team
-- Assist other team member with "dockerization" of their applications
-- Driving organization toward innovation by replacing outdated processes
-- Jenkins + implementing CI/CD
-- Pushed team toward Jenkins pipeline (instead of Freestyle builds)
-- Pull request automation
-- Unit testing
-- linting
-- static analysis
-- code coverage
-- Automated on-prem deployments
-- Automated integration testing
-- Innovation
-- Installed Kafka/ Zookeeper cluster
-- Installed ELK stack, demonstrated visualizations in Kibana
-- Guiding team toward new technoloies and ideas
-- Agile methodologies, Kanban
-- Delegating work to offshore development, and creating processes to check code quality
-- Providing tech leadership to the development team
-
-**Business Analyst (Feb 2013 - Feb 2016)**
-
-- Biztalk server development (XSLT)
-- Writing X12 EDI File Parser to canonical format
-- Java/ C# Development
-- Assisting with integrations with partners
-- Writing complex SQL queries
-- Process Improvement
-
-**Enrollment Processor (May 2012 - Feb 2013)**
-
-- Microsoft Office automation using VBA
-- Process automation
-- Writing complex SQL queries
-
-<h2 style="text-align: center">Intermountain Healthcare</h2>
-**Equipment Tracking Coordinator (Jun 2011 - May 2012)**
-- Replacing manual processes with semi-automation (via MS Access)
-- Writing SQL queries
-
-**HME Processing Tech (Aug 2010 - Jun 2011)**
-
-**Various (Aug 2006 - Aug 2010)** -->
