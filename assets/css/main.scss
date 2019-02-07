@@ -2470,8 +2470,18 @@ body.is-mobile {
 	}
 }
 
+// bio
 #blueimp-gallery img {
 	width: auto;
+}
+#links {
+	text-align: center;
+}
+.bio-image {
+	width: 20% !important;
+	@include breakpoint(small) {
+		width: 40% !important;
+	}
 }
 
 .resume-section {
@@ -2639,4 +2649,10 @@ body.is-mobile {
 	font-size: 8pt;
 	text-transform: uppercase;
 	padding: 0;
+}
+
+#disqus_thread {
+	@media print {
+		display: none;
+	}
 }

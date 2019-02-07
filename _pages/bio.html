@@ -6,15 +6,12 @@ excerpt: About me. Things I do for fun, what I'm into, and other fun facts on a 
 image: assets/img/DSC02161.jpg
 <!-- background-image: DSC02161.jpg -->
 caption: photo &#58; rockville,utah - outside of zion national park
+layout: fullsize
 ---
 
-- mountain biking
-- climbing
-- photography
-- skiing (new this year)
-- camping
-- tinkering
-
+<p style="text-align: center; padding-top: 1em;">
+    When I'm not writing code, I love spending time outdoors. Here are a few photos of moments I've loved over the past year or so.
+</p>
 <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery">
     <div class="slides"></div>
@@ -27,13 +24,13 @@ caption: photo &#58; rockville,utah - outside of zion national park
 </div>
 
 <div id="links">
-{% for image in site.static_files %}
+    {% for image in site.static_files %}
     {% if image.path contains 'img/bio' %}
     <a href="{{ site.baseurl }}{{ image.path }}" title="image">
-        <img style="width:25%" src="{{ site.baseurl }}/assets/img/thumbnails/bio/{{ image.name }}" alt="image" />
+        <img class="bio-image" src="{{ site.baseurl }}/assets/img/thumbnails/bio/{{ image.name }}" alt="image" />
     </a>
     {% endif %}
-{% endfor %}
+    {% endfor %}
 </div>
 
 <script>
@@ -41,11 +38,14 @@ caption: photo &#58; rockville,utah - outside of zion national park
         event = event || window.event;
         var target = event.target || event.srcElement,
             link = target.src ? target.parentNode : target,
-            options = {index: link, event: event},
+            options = {
+                index: link,
+                event: event
+            },
             links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
     };
-    </script> 
+</script>
 
 <!-- 
 {% for image in site.static_files %}
