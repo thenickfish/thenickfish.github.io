@@ -108,8 +108,8 @@ custom_extensions: no
 # Build settings
 permalink: /:title
 markdown: kramdown
-#sass:
-#  style: compressed
+sass:
+ style: compressed
 exclude: ['site.bat','compose.rb','README.md']
 include: ['_pages','.htaccess']
 defaults:

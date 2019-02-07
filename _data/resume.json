@@ -1,0 +1,109 @@
+{
+    "about": "I crave learning, and outside of my professional life I love to spend time pursuing education. I'm always trying to learn new techniques, architectures, and technologies. I value writing clean and testable code, and always try to find a balance between simplicity and flexibility. I take pride in being able to solve problems I may not initially understand.",
+    "experiences": [{
+            "title": ".NET / .NET Core",
+            "description": "I've developed many applications using the .NET framework. I've created everything from command line apps, to web services."
+        },
+        {
+            "title": "CI/ CD",
+            "description": "Experience automating pipelines for static analysis, compilation, and deployment using Jenkins. Enabled automatic pull request checks via git hooks."
+        },
+        {
+            "title": "Git",
+            "description": "5 years of experience using git for version control and code reviews through pull requests. Experience with Github and Bitbucket Server."
+        },
+        {
+            "title": "Angular",
+            "description": "I've built and maintained single page web applications using Typescript and Angular 2+ (also have some AngularJS experience)."
+        },
+        {
+            "title": "Jekyll",
+            "description": "This webpage is built using Jekyll, which I consider to be excellent for static site generation."
+        },
+        {
+            "title": "SQL",
+            "description": "I've been working with SQL for 10 years, and have used various versions of SQL Server (and Sybase ASE, MySQL). Experienced in optimizing queries and doing some performance tuning."
+        },
+        {
+            "title": "Testing",
+            "description": "I've developed applications using test driven development, and also done behavior driven development, using the Gherkin language."
+        },
+        {
+            "title": "Agile",
+            "description": "Worked in a Kanban environment using Jira. I also have experience working in a scrum atmosphere. I thrive in a fast paced environment, and love a work environment that supports this."
+        },
+        {
+            "title": "Web Development",
+            "description": "Using modern web tooling such as gulp, and sass to aid in development workflows."
+        },
+        {
+            "title": "Leadership",
+            "description": "Driving team toward new ideas. Implemented ELK stack in Docker cluster. Implemented Kafka cluster. Member of governance team for Docker."
+        }
+    ],
+    "skills": [{
+            "title": "C#",
+            "percent": 85
+        },
+        {
+            "title": "SQL",
+            "percent": 90
+        },
+        {
+            "title": "Powershell",
+            "percent": 65
+        },
+        {
+            "title": "Angular",
+            "percent": 75
+        },
+        {
+            "title": "Jenkins",
+            "percent": 70
+        },
+        {
+            "title": "Git",
+            "percent": 80
+        },
+        {
+            "title": "Docker",
+            "percent": 80
+        },
+        {
+            "title": "Jira",
+            "percent": 85
+        }
+    ],
+    "employments": [{
+        "company": "SelectHealth",
+        "location": "Murray, UT",
+        "start": "2016",
+        "end": "Present",
+        "title": "Software Engineer",
+        "description": "I am considered a thought leader among my team. I have been able to contribute to many improvements at the company, including continuous integration, automated testing, and being involved in implementation of Docker EE. Repsonsible for solving business problems and ensuring organization remains competitive."
+    },
+    {
+        "company": "SelectHealth",
+        "location": "Murray, UT",
+        "start": "2013",
+        "end": "2016",
+        "title": "Business Analyst",
+        "description": "As a BA, I created an X12 edi file parser application that converted them into a canonical format. I also did Biztalk server development (maps and pipelines), XSLT mapping creation, some Java and C# development, and wrote complex SQL queries"
+    },
+    {
+        "company": "SelectHealth",
+        "location": "Murray, UT",
+        "start": "2012",
+        "end": "2013",
+        "title": "Enrollment Coordinator",
+        "description": "Originally hired for data entry, I quickly found myself writing complex queries, and automating manual processes using Microsoft Access and VBA. I implemented a process to parse files received from CMS (Medicare) that is still in effect today."
+    },
+    {
+        "company": "Intermountain Healthcare",
+        "location": "Salt Lake City, UT",
+        "start": "2011",
+        "end": "2012",
+        "title": "Asset Tracking",
+        "description": "I was responsible for tracking and maintaining DME (durable medical equipment). I found ways to replace manual processes with semi automated ones (via MS Access). I also wrote SQL queries to expand our DME maintenance capabilities."
+    }]
+}

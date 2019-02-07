@@ -1,0 +1,101 @@
+---
+key: 2
+title: Resume
+permalink: resume/
+excerpt: From a professional standpoint, this is who I am. If you're looking to hire me, this is probably what you're looking for.
+image: assets/img/DSC02161.jpg
+caption: photo &#58; rockville,utah - outside of zion national park
+layout: fullsize
+---
+<!-- http://preview.themeforest.net/item/desmond-resume-cv-html-template/full_screen_preview/15956797 -->
+
+<div class="resume">
+    <div class="resume-section">
+        <div class="left-resume-col">
+            <h2>About</h2>
+            <p>(here's my deal)</p>
+        </div>
+        <div class="right-resume-col">
+            <div class="resume-row">
+                <p>{{site.data.resume.about}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-section">
+        <div class="left-resume-col">
+            <h2>Expertise</h2>
+            <p>(stuff I'm good at)</p>
+        </div>
+        <div class="right-resume-col">
+            <div class="resume-row">
+                {% for experience in site.data.resume.experiences %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                {% if loopindex == 1 and forloop.index >= 2 %}
+            </div>
+            <div class="resume-row">
+                {% endif %}
+                <div class="resume-item">
+                    <h4 class="resume-item-count">{% if forloop.index < 10 %}0{% endif %}{{forloop.index}}</h4> <div
+                            class="resume-item-body">
+                            <h4>{{experience.title}}</h4>
+                            <span>{{experience.description}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="resume-section">
+    <div class="left-resume-col">
+        <h2>Skills</h2>
+        <p>(things I know)</p>
+    </div>
+    <div class="right-resume-col">
+        <div class="resume-row">
+            {% for skill in site.data.resume.skills %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
+            {% if loopindex == 1 and forloop.index >= 2 %}
+        </div>
+        <div class="resume-row">
+            {% endif %}
+            <div class="resume-item">
+                <div class="resume-item-body">
+                    <h4>{{skill.title}} <span>{{skill.percent}}%</span></h4>
+                    <div class="meter">
+                        <span style="width: {{skill.percent}}%"></span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="resume-section">
+    <div class="left-resume-col">
+        <h2>Employment</h2>
+        <p>(people who gave me money)</p>
+    </div>
+    <div class="right-resume-col">
+        {% for employment in site.data.resume.employments %}
+        <div class="resume-row">
+            <div class="resume-item">
+                <div class="resume-item-body">
+                    <div class="resume-employment">
+                        <div class="resume-employment-details">
+                            <span class="resume-small-lt">{{employment.start}} - {{employment.end}}</span>
+                            <h4>{{employment.company}}</h4>
+                            <h5>{{employment.title}}</h5>
+                            <span class="resume-small-lt">{{employment.location}}</span>
+                        </div>
+                        <div class="resume-employment-desc">
+                            <p>{{employment.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
