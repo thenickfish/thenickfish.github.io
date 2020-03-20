@@ -1,2 +1,0 @@
-I"�<p>This is an argument I heard in a discussion the other day, and I hadn’t thought about it before. Is it true? Should I be moving everything into a batch job for efficiency reasons? For the particular problem we were discussing, it <em>may</em> be the most efficient way (from a time per record processed standpoint, at least). But is this always the case? I don’t think it’s so black and white, and I’ll explain below.</p>
-:ET

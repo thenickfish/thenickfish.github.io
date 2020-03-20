@@ -1,2 +1,0 @@
-I"<p>Recently, I decided to put together a silly little website so that my wife could upload her recipes to the internet. I’m a big fan of using static site generators like <a href="https://jekyllrb.com/">Jekyll</a> (the generator used to make this blog) becuase it allows you to upload new content without having to create new markup each time. For a technical person like me, it’s not problem writing a bit of yaml and markdown to get a page onto the internet for free with <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-:ET

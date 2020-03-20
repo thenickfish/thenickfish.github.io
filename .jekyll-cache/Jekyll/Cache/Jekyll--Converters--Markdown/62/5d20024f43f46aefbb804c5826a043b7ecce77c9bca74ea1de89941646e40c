@@ -1,2 +1,0 @@
-I"%<p>In my <a href="azure-blob-website/">last post</a> I went over why I thought blob storage was a really cool option for hosting your static webpage. If you haven’t read it, check that one out before continuing. This post will be outlining a way you can do continuous delivery to your Azure storage account using Travis CI and GitHub. I’ll show you how you can get an impressive amount of automation, and a highly scalable website for a very, very low cost. The below commands are written in Powershell, and some may need tweaking for bash.</p>
-:ET

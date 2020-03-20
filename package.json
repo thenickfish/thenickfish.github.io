@@ -19,16 +19,16 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "child_process": "^1.0.2",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-gm": "0.0.9",
     "gulp-image-resize": "^0.13.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "blueimp-gallery": "^2.33.0"
+    "blueimp-gallery": "^2.36.0"
   }
 }
